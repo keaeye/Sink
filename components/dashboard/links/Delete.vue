@@ -18,7 +18,7 @@ async function deleteLink() {
     },
   })
   emit('update:link', props.link, 'delete')
-  toast('Delete successful!')
+  toast('删除成功！')
 }
 </script>
 
