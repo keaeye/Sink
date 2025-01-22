@@ -116,10 +116,10 @@ async function onSubmit(formData) {
   dialogOpen.value = false
   emit('update:link', newLink)
   if (isEdit) {
-    toast('Link updated successfully')
+    toast('短链更新成功！')
   }
   else {
-    toast('Link created successfully')
+    toast('短链删除成功！')
   }
 }
 
