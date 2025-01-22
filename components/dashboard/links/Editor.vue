@@ -135,13 +135,13 @@ const { previewMode } = useRuntimeConfig().public
           variant="outline"
           @click="randomSlug"
         >
-          Create Link
+          创建短链
         </Button>
       </slot>
     </DialogTrigger>
     <DialogContent class="max-w-[95svw] max-h-[95svh] md:max-w-lg grid-rows-[auto_minmax(0,1fr)_auto]">
       <DialogHeader>
-        <DialogTitle>{{ link.id ? 'Edit Link' : 'Create Link' }}</DialogTitle>
+        <DialogTitle>{{ link.id ? '编辑短链 : '创建短链' }}</DialogTitle>
       </DialogHeader>
       <p
         v-if="previewMode"
