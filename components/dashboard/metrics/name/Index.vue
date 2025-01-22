@@ -16,11 +16,11 @@ function formatName(name, type) {
 
   try {
     if (type === 'country') {
-      const regionNames = new Intl.DisplayNames(['en'], { type: 'region' })
+      const regionNames = new Intl.DisplayNames(['zh'], { type: 'region' })
       return `${getFlag(name)} ${regionNames.of(name)}`
     }
     if (type === 'language') {
-      const languageNames = new Intl.DisplayNames(['en'], { type: 'language' })
+      const languageNames = new Intl.DisplayNames(['zh'], { type: 'language' })
       return languageNames.of(name)
     }
     return name
